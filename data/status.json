@@ -1,7 +1,7 @@
 {
   "hq_name": "승권 대장 본부",
   "owner_label": "승권 대장님 전용",
-  "updated_at": "2026-11-28 02:18:51",
+  "updated_at": "2026-11-28 04:19:05",
   "stats": {
     "active_schedules": 13,
     "paused_schedules": 14,
@@ -74,8 +74,8 @@
       "schedule": "1h",
       "state": "active",
       "agent": "admin",
-      "last_run": "2026-11-28 01:18",
-      "next_run": "2026-11-28 02:18",
+      "last_run": "2026-11-28 03:18",
+      "next_run": "2026-11-28 04:18",
       "summary": "기록 없음"
     },
     {
@@ -84,8 +84,8 @@
       "schedule": "2h",
       "state": "active",
       "agent": "radar",
-      "last_run": "2026-11-28 01:13",
-      "next_run": "2026-11-28 03:13",
+      "last_run": "2026-11-28 03:13",
+      "next_run": "2026-11-28 05:13",
       "summary": "2026-11-28 01:14 점검:"
     },
     {
@@ -341,13 +341,13 @@
   ],
   "upcoming_runs": [
     {
-      "time": "2026-11-28 02:18",
+      "time": "2026-11-28 04:18",
       "title": "🔄 승권 대장 본부 대시보드 동기화",
       "type": "자동 스케줄",
       "agent": "admin"
     },
     {
-      "time": "2026-11-28 03:13",
+      "time": "2026-11-28 05:13",
       "title": "📱 폴드8 가입·시세 및 특가 감시",
       "type": "자동 스케줄",
       "agent": "radar"
