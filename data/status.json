@@ -1,0 +1,555 @@
+{
+  "hq_name": "승권 대장 본부",
+  "owner_label": "승권 대장님 전용",
+  "updated_at": "2026-11-27 13:16:16",
+  "stats": {
+    "active_schedules": 12,
+    "paused_schedules": 14,
+    "today_completed": 10,
+    "agents_online": 4,
+    "agents_total": 5,
+    "rooms_active": 3
+  },
+  "agents": [
+    {
+      "id": "chief",
+      "name": "씨리얼 본부장",
+      "role": "총괄 지휘 · 브리핑 · 조율",
+      "room": "지휘실",
+      "emoji": "🐯",
+      "status": "online",
+      "status_label": "지휘 중",
+      "tasks_count": 12,
+      "highlight": "전체 루틴 총괄 및 실시간 대시보드 동기화"
+    },
+    {
+      "id": "content",
+      "name": "콘텐츠 비서",
+      "role": "네이버 · 티스토리 · 블로거 발행/SEO",
+      "room": "작업실 A",
+      "emoji": "🐑",
+      "status": "online",
+      "status_label": "가동 중",
+      "tasks_count": 4,
+      "highlight": "네이버 11호 공개 발행·오타수정 완료 / 티스토리 21호·블로거 15호 발행"
+    },
+    {
+      "id": "event",
+      "name": "이벤트 비서",
+      "role": "관공서 경품 설문 · 금요 로또 예측",
+      "room": "작업실 B",
+      "emoji": "🐱",
+      "status": "online",
+      "status_label": "가동 중",
+      "tasks_count": 2,
+      "highlight": "오늘 오전 경품 설문 5건 완료 · 제1252회 로또 5게임 예측 완료"
+    },
+    {
+      "id": "radar",
+      "name": "레이더 비서",
+      "role": "폴드8 시세 · 쿠팡 40%/80% 특가 감시",
+      "room": "작업실 C",
+      "emoji": "🐬",
+      "status": "online",
+      "status_label": "감시 중",
+      "tasks_count": 3,
+      "highlight": "2시간 간격 폴드8 성지·자급제 및 하루 4회 쿠팡 대란 감시"
+    },
+    {
+      "id": "admin",
+      "name": "생활행정 비서",
+      "role": "아침 스캔 · 메일 · 일정 · 약정 관리",
+      "room": "라운지",
+      "emoji": "🐰",
+      "status": "standby",
+      "status_label": "대기 중",
+      "tasks_count": 3,
+      "highlight": "메일·드라이브·애플 캘린더 일정 및 약정 만기일 추적"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "📱-kt-기변-폴드8-울트라-시세-감시",
+      "title": "📱 폴드8 가입·시세 및 특가 감시",
+      "schedule": "2h",
+      "state": "active",
+      "agent": "radar",
+      "last_run": "2026-11-27 11:13",
+      "next_run": "2026-11-27 13:13",
+      "summary": "2026-11-27 13:14 점검:"
+    },
+    {
+      "id": "🎁-전국-관공서·지자체-경품-만족도-조사-수시-응모",
+      "title": "🎁 전국 관공서·지자체 경품 만족도 조사 수시 응모",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "event",
+      "last_run": "2026-11-27 09:34",
+      "next_run": "2026-11-27 13:34",
+      "summary": "2026-11-27 09:34~09:51 실행 13회차 (오전 정기)"
+    },
+    {
+      "id": "🛒-쿠팡-80-파격-대란-특가-감시",
+      "title": "🛒 쿠팡 80% 파격 대란 특가 감시",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "radar",
+      "last_run": "2026-11-27 12:09",
+      "next_run": "2026-11-27 17:09",
+      "summary": "2026-11-27 12:09 점검:"
+    },
+    {
+      "id": "🛒-쿠팡-삼성-갤럭시-애플-40-이상-특가-감시",
+      "title": "🛒 쿠팡 삼성 갤럭시·애플 40% 이상 특가 감시",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "radar",
+      "last_run": "2026-11-27 12:09",
+      "next_run": "2026-11-27 17:09",
+      "summary": "2026-11-27 12:09 점검:"
+    },
+    {
+      "id": "📝-구글-블로거-애드센스-매일-오전-6시-발행",
+      "title": "📝 구글 블로거 애드센스 매일 오전 6시 발행",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "content",
+      "last_run": "2026-11-27 06:00",
+      "next_run": "2026-11-28 06:00",
+      "summary": "🔧 2026-11-23 제목 복구·ads.txt 설정 (승권 님 승인 [#46793])"
+    },
+    {
+      "id": "📝-네이버-블로그-매일-오전-6시-발행",
+      "title": "📝 네이버 블로그 카테고리별 매일 오전 6시 발행",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "content",
+      "last_run": "2026-11-27 06:00",
+      "next_run": "2026-11-28 06:00",
+      "summary": "근거 팩트: 테슬라 수퍼차저 국내 요금 kWh당 339원(타사 개방 396~542.4원)·혼잡 수수료(스톨 점유율 70% 이상 시 80% 초과/완료 후 5분 경과 분당 최대 500원), 기후에너지환경부 2026-08-01 개편 공공충전 5단계 요금(3"
+    },
+    {
+      "id": "📝-티스토리-생활혜택·할인-매일-오전-6시-발행",
+      "title": "📝 티스토리 생활혜택·할인 매일 오전 6시 발행",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "content",
+      "last_run": "2026-11-27 06:00",
+      "next_run": "2026-11-28 06:00",
+      "summary": "(다음 발행: 2026-11-26 06:00, 주제풀 1번 → [보험/자동차] 자동차보험 갱신 때 5~13% 더 깎는 법: 마일리지 특약·블랙박스·커넥티드카 할인 총정리)"
+    },
+    {
+      "id": "my-day-preparation",
+      "title": "☀️ 아침 브리핑",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "admin",
+      "last_run": "2026-11-27 06:58",
+      "next_run": "2026-11-28 06:58",
+      "summary": "기록 없음"
+    },
+    {
+      "id": "📊-블로그-3곳-검색·조회수-점검-및-개선",
+      "title": "📊 블로그 3곳 검색·조회수 점검 및 개선",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "content",
+      "last_run": "2026-11-27 07:04",
+      "next_run": "2026-11-28 07:03",
+      "summary": "ads.txt**: 라이브 https://seereal1052.blogspot.com/ads.txt **HTTP 200·1줄 정상**(브라우저 확인; curl은 구글 봇 차단 429). 애드센스 사이트 목록은 여전히 **찾을 수 없음**, 최종 업데이"
+    },
+    {
+      "id": "🎱-매주-금요일-로또-번호-예측",
+      "title": "🎱 매주 금요일 로또 번호 예측",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "event",
+      "last_run": "2026-11-27 09:04",
+      "next_run": "2026-12-04 09:03",
+      "summary": "2026-11-27 (금, 정기 09:00 실행) — 제1252회 추천 (기준: 1~1251회 전체 데이터, 2026-11-21 기준, 직전 1251회 당첨번호 14, 18, 19, 29, 40, 45 + 보너스 1 / 25개 번호 분산 커버)"
+    },
+    {
+      "id": "📱-부가서비스-해지가능일-알림",
+      "title": "📱 부가서비스 해지가능일 알림",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "admin",
+      "last_run": null,
+      "next_run": "2027-02-23 09:03",
+      "summary": "기록 없음"
+    },
+    {
+      "id": "📱-요금제-변경가능일-알림",
+      "title": "📱 요금제 변경가능일 알림",
+      "schedule": "정기/예약",
+      "state": "active",
+      "agent": "admin",
+      "last_run": null,
+      "next_run": "2027-05-21 09:02",
+      "summary": "기록 없음"
+    },
+    {
+      "id": "🎁-삼성닷컴-day-11·12-당첨자-발표-확인",
+      "title": "🎁 삼성닷컴 DAY 11·12 당첨자 발표 확인",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "event",
+      "last_run": "2026-11-25 15:39",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "🎁-삼성닷컴-라이온즈-경품-축제-자동-응모",
+      "title": "🎁 삼성닷컴 라이온즈 경품 축제 자동 응모",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "event",
+      "last_run": "2026-11-24 09:05",
+      "next_run": null,
+      "summary": "2026-11-25 15:39 확인: 마지막 DAY 12(라이온즈 블루시즌권 2인) 당첨자 9명 공개 확인 — 아쉽게 미당첨(양*권 / 6440 미포함). 이로써 12일간의 경품 축제(DAY 8~12 응모) 모두 종료."
+    },
+    {
+      "id": "💬-네이버-커머스-id-고객센터-답변-확인",
+      "title": "💬 네이버 커머스 ID 고객센터 답변 확인",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "admin",
+      "last_run": "2026-11-18 14:00",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-12일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 12일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-13 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-13일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 13일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-14 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-17일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 17일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-18 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-18일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 18일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-19 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-19일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 19일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-20 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-20일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 20일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-21 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-21일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 21일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-22 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-22일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 22일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-23 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-23일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 23일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-24 15:30",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-24일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 24일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-25 15:34",
+      "next_run": null,
+      "summary": "기록 없음"
+    },
+    {
+      "id": "💰-애드포스트-11월-25일-확정-수익-확인-및-안내",
+      "title": "💰 애드포스트 11월 25일 확정 수익 확인 및 안내",
+      "schedule": "정기/예약",
+      "state": "paused",
+      "agent": "content",
+      "last_run": "2026-11-26 15:35",
+      "next_run": null,
+      "summary": "기록 없음"
+    }
+  ],
+  "upcoming_runs": [
+    {
+      "time": "2026-11-27 13:13",
+      "title": "📱 폴드8 가입·시세 및 특가 감시",
+      "type": "자동 스케줄",
+      "agent": "radar"
+    },
+    {
+      "time": "2026-11-27 13:34",
+      "title": "🎁 전국 관공서·지자체 경품 만족도 조사 수시 응모",
+      "type": "자동 스케줄",
+      "agent": "event"
+    },
+    {
+      "time": "2026-11-27 17:09",
+      "title": "🛒 쿠팡 80% 파격 대란 특가 감시",
+      "type": "자동 스케줄",
+      "agent": "radar"
+    },
+    {
+      "time": "2026-11-27 17:09",
+      "title": "🛒 쿠팡 삼성 갤럭시·애플 40% 이상 특가 감시",
+      "type": "자동 스케줄",
+      "agent": "radar"
+    },
+    {
+      "time": "2026-11-28 06:00",
+      "title": "📝 구글 블로거 애드센스 매일 오전 6시 발행",
+      "type": "자동 스케줄",
+      "agent": "content"
+    },
+    {
+      "time": "2026-11-28 06:00",
+      "title": "📝 네이버 블로그 카테고리별 매일 오전 6시 발행",
+      "type": "자동 스케줄",
+      "agent": "content"
+    },
+    {
+      "time": "2026-11-28 06:00",
+      "title": "📝 티스토리 생활혜택·할인 매일 오전 6시 발행",
+      "type": "자동 스케줄",
+      "agent": "content"
+    },
+    {
+      "time": "2026-11-28 06:58",
+      "title": "☀️ 아침 브리핑",
+      "type": "자동 스케줄",
+      "agent": "admin"
+    },
+    {
+      "time": "2026-11-28 07:03",
+      "title": "📊 블로그 3곳 검색·조회수 점검 및 개선",
+      "type": "자동 스케줄",
+      "agent": "content"
+    },
+    {
+      "time": "2026-12-04 09:03",
+      "title": "🎱 매주 금요일 로또 번호 예측",
+      "type": "자동 스케줄",
+      "agent": "event"
+    },
+    {
+      "time": "2027-02-23 09:03",
+      "title": "📱 부가서비스 해지가능일 알림",
+      "type": "자동 스케줄",
+      "agent": "admin"
+    },
+    {
+      "time": "2027-05-21 09:02",
+      "title": "📱 요금제 변경가능일 알림",
+      "type": "자동 스케줄",
+      "agent": "admin"
+    }
+  ],
+  "calendar_events": [
+    {
+      "title": "지인 생일 (캘린더)",
+      "start": "2026-12-02 00:00",
+      "all_day": true,
+      "calendar": "생일",
+      "source": "Apple Calendar"
+    },
+    {
+      "title": "지인 생일 (캘린더)",
+      "start": "2026-12-04 00:00",
+      "all_day": true,
+      "calendar": "생일",
+      "source": "Apple Calendar"
+    },
+    {
+      "title": "대설",
+      "start": "2026-12-07 00:00",
+      "all_day": true,
+      "calendar": "음력 및 24절기",
+      "source": "Apple Calendar"
+    },
+    {
+      "title": "지인 생일 (캘린더)",
+      "start": "2026-12-08 00:00",
+      "all_day": true,
+      "calendar": "생일",
+      "source": "Apple Calendar"
+    }
+  ],
+  "calendar_sync": "cached",
+  "milestones": [
+    {
+      "date": "2026-11-29",
+      "title": "신세계사이먼 기한 고지 확인",
+      "category": "생활행정"
+    },
+    {
+      "date": "2026-11-30",
+      "title": "SSG 기한 / e청소년 당첨 발표 확인",
+      "category": "이벤트"
+    },
+    {
+      "date": "2026-12-09",
+      "title": "하나은행 고지 / 국립공주병원 설문 마감",
+      "category": "생활행정"
+    },
+    {
+      "date": "2026-12-14",
+      "title": "카카오뱅크 달러박스 기한",
+      "category": "금융"
+    },
+    {
+      "date": "2027-02-23",
+      "title": "LGU+ 부가서비스 해지 가능일",
+      "category": "통신약정"
+    },
+    {
+      "date": "2027-05-21",
+      "title": "LGU+ 요금제 변경 가능일",
+      "category": "통신약정"
+    }
+  ],
+  "briefings": [
+    {
+      "time": "2026-11-27 11:12",
+      "title": "네이버 블로그 11호 공개 발행 및 오타 수정 완료",
+      "tag": "블로그",
+      "detail": "테슬라 모델Y 충전비 포스팅 전체공개 발행 및 태그 10개 적용, 본문 오타 수정 재발행까지 라이브 검증 마침."
+    },
+    {
+      "time": "2026-11-27 09:51",
+      "title": "오전 관공서·지자체 경품 설문 5건 응모 완료",
+      "tag": "이벤트",
+      "detail": "청소년1388, 국립공주병원, 재난예방 사진/영상 공모전 2건, 서대문마당 만족도 조사 제출."
+    },
+    {
+      "time": "2026-11-27 09:05",
+      "title": "제1252회 로또 1등 목표 5게임 예측 완료",
+      "tag": "로또",
+      "detail": "25개 번호 분산 커버 로직 적용해 5게임 조합 추출 및 기록 완료."
+    },
+    {
+      "time": "2026-11-27 07:08",
+      "title": "블로그 3곳 07시 검색·조회수 점검 완료",
+      "tag": "SEO",
+      "detail": "티스토리 첫 검색 유입(17.6%)·서치콘솔 첫 클릭(2회), 네이버 메이트 9.4만 인용·홈판 7.23% 반등 확인."
+    },
+    {
+      "time": "2026-11-27 06:07",
+      "title": "티스토리 21호 · 구글 블로거 15호(목표 100%) 발행",
+      "tag": "발행",
+      "detail": "블로거 15편 목표 달성 완료, 티스토리·블로거 색인 요청까지 마무리."
+    }
+  ],
+  "system_notes": [
+    {
+      "id": "note-1",
+      "text": "애드포스트 11월 26일 확정 수익 확인 (오늘 15:35 예정)",
+      "done": false,
+      "tag": "예정"
+    },
+    {
+      "id": "note-2",
+      "text": "오후 경품 설문 수시 응모 & 국회·건보공단 발표 확인 (13:30 예정)",
+      "done": false,
+      "tag": "예정"
+    },
+    {
+      "id": "note-3",
+      "text": "애드센스 심사 결과 및 블로거 ads.txt 반영 추적",
+      "done": false,
+      "tag": "진행중"
+    },
+    {
+      "id": "note-4",
+      "text": "테무 판매자 가입 1단계 및 상품 단가표 정리 대기",
+      "done": false,
+      "tag": "대기"
+    },
+    {
+      "id": "note-5",
+      "text": "안 쓰는 사이트 탈퇴 후보 6곳 선택 대기",
+      "done": false,
+      "tag": "확인필요"
+    }
+  ],
+  "connections": [
+    {
+      "name": "GitHub (@yangsk2000-art)",
+      "status": "연결됨",
+      "ok": true
+    },
+    {
+      "name": "Google Drive & Gmail",
+      "status": "연결됨",
+      "ok": true
+    },
+    {
+      "name": "Naver Mail",
+      "status": "연결됨",
+      "ok": true
+    },
+    {
+      "name": "Apple Calendar",
+      "status": "캐시 유지",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>승권 대장 본부 · AI 비서실</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Top Header -->
+    <header class="top-header">
+      <div class="brand">
+        <div class="brand-avatar">👑</div>
+        <div class="brand-text">
+          <h1 id="hq-title">승권 대장 본부</h1>
+          <p class="sub-status"><span class="dot green"></span><span id="owner-label">승권 대장님 전용</span></p>
+        </div>
+      </div>
+      <button id="refresh-btn" class="live-pill" title="실시간 데이터 새로고침">
+        <span class="dot green pulse"></span>
+        <span id="live-text">실시간 연결</span>
+      </button>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tab-grid" aria-label="비서실 메뉴">
+      <button class="tab-btn active" data-tab="office"><span>🗺️</span> 오피스 맵</button>
+      <button class="tab-btn" data-tab="meeting"><span>💬</span> 회의실</button>
+      <button class="tab-btn" data-tab="tasks"><span>📋</span> 작업실</button>
+      <button class="tab-btn" data-tab="agents"><span>📊</span> 비서현황</button>
+      <button class="tab-btn" data-tab="schedule"><span>📅</span> 일정·연결</button>
+      <button class="tab-btn" data-tab="memo"><span>📝</span> 메모</button>
+    </nav>
+
+    <!-- Tab 1: Office Map -->
+    <main id="tab-office" class="tab-panel active">
+      <section class="hero-banner">
+        <div class="hero-chip">👑 승권 대장 본부</div>
+        <h2 id="hero-headline">대장님, 비서 4명이 가동 중이에요</h2>
+        <p id="hero-sub">방을 눌러 들어가 보세요. 방마다 비서들이 일하고 있어요.</p>
+      </section>
+
+      <div class="control-row">
+        <div class="segmented" role="group" aria-label="오피스 스타일">
+          <button id="style-basic" class="seg-btn">🗺️ 기본</button>
+          <button id="style-clay" class="seg-btn active">🧸 클레이</button>
+        </div>
+        <button id="motion-toggle" class="chip-btn active">✨ 움직임 ON</button>
+      </div>
+
+      <div class="status-row">
+        <span class="stat-pill"><span class="dot green"></span> <span id="rooms-badge">3개 방 가동</span></span>
+        <span class="stat-pill">👥 <span id="agents-badge">ON 4/5명</span></span>
+        <span class="stat-pill muted">🕒 동기화 <span id="sync-time">-</span></span>
+      </div>
+
+      <section class="office-card">
+        <div class="office-stage motion-on" id="office-stage">
+          <img id="office-img" src="assets/office-clay.png" alt="승권 대장 본부 오피스 맵" />
+
+          <button class="map-pin pin-chief" data-room="chief">
+            <span class="pin-badge">🎯 지휘실</span>
+            <span class="pin-dot online"></span>
+          </button>
+
+          <button class="map-pin pin-meeting" data-room="meeting">
+            <span class="pin-badge">🏛️ 대회의실</span>
+          </button>
+
+          <button class="map-pin pin-work" data-room="tasks">
+            <span class="pin-badge">💻 작업실</span>
+            <span class="pin-dot online"></span>
+          </button>
+
+          <button class="map-pin pin-lounge" data-room="memo">
+            <span class="pin-badge">☕ 라운지</span>
+            <span class="pin-dot standby"></span>
+          </button>
+        </div>
+
+        <div id="room-quick-card" class="room-quick-card">
+          <div class="quick-head">
+            <strong id="quick-title">🎯 지휘실 · 씨리얼 본부장</strong>
+            <span id="quick-badge" class="badge online">지휘 중</span>
+          </div>
+          <p id="quick-desc">전체 12개 활성 스케줄과 오늘 10건 완료 작업을 총괄하고 있어요.</p>
+          <button id="quick-go" class="quick-link">자세히 보기 →</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Tab 2: Meeting Room (Briefings) -->
+    <section id="tab-meeting" class="tab-panel">
+      <div class="section-head">
+        <h2>🏛️ 대회의실 · 최근 보고 & 브리핑</h2>
+        <span class="sub-count" id="briefing-count">0건</span>
+      </div>
+      <div id="briefing-list" class="card-stack"></div>
+    </section>
+
+    <!-- Tab 3: Tasks (Workspace) -->
+    <section id="tab-tasks" class="tab-panel">
+      <div class="section-head">
+        <h2>📋 작업실 · 실제 가동 스케줄</h2>
+        <div class="filter-pills">
+          <button class="filter-btn active" data-filter="active">가동중</button>
+          <button class="filter-btn" data-filter="all">전체</button>
+          <button class="filter-btn" data-filter="paused">완료/일시정지</button>
+        </div>
+      </div>
+      <div id="task-list" class="card-stack"></div>
+    </section>
+
+    <!-- Tab 4: Agents -->
+    <section id="tab-agents" class="tab-panel">
+      <div class="section-head">
+        <h2>📊 비서현황 · 파트별 전담 AI</h2>
+        <span class="sub-count">5명 편성</span>
+      </div>
+      <div id="agent-list" class="agent-grid"></div>
+    </section>
+
+    <!-- Tab 5: Schedule & Connections -->
+    <section id="tab-schedule" class="tab-panel">
+      <div class="section-head">
+        <h2>📅 예정 일정 & 다가오는 실행</h2>
+        <span class="sub-count" id="cal-sync-badge">Apple Calendar</span>
+      </div>
+      <div class="schedule-block">
+        <h3>⏰ 다음 자동 실행 예정</h3>
+        <div id="upcoming-list" class="timeline-list"></div>
+      </div>
+      <div class="schedule-block">
+        <h3>🗓️ 캘린더 & 주요 기한</h3>
+        <div id="calendar-list" class="timeline-list"></div>
+      </div>
+      <div class="schedule-block">
+        <h3>🔌 외부 연결 상태</h3>
+        <div id="connection-list" class="conn-grid"></div>
+      </div>
+    </section>
+
+    <!-- Tab 6: Memo -->
+    <section id="tab-memo" class="tab-panel">
+      <div class="section-head">
+        <h2>📝 본부 메모 & 체크리스트</h2>
+      </div>
+      <form id="memo-form" class="memo-form">
+        <input id="memo-input" type="text" placeholder="대장님 메모를 남겨보세요 (이 브라우저에 저장)" maxlength="140" />
+        <button type="submit">추가</button>
+      </form>
+      <div class="schedule-block">
+        <h3>📌 대장님 개인 메모</h3>
+        <div id="user-memo-list" class="memo-list"></div>
+      </div>
+      <div class="schedule-block">
+        <h3>🤖 씨리얼 대기 체크리스트</h3>
+        <div id="system-memo-list" class="memo-list"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
