@@ -1,11 +1,11 @@
 {
   "hq_name": "승권 대장 본부",
   "owner_label": "승권 대장님 전용",
-  "updated_at": "2026-11-27 23:18:55",
+  "updated_at": "2026-11-28 00:19:17",
   "stats": {
     "active_schedules": 13,
     "paused_schedules": 14,
-    "today_completed": 11,
+    "today_completed": 0,
     "agents_online": 4,
     "agents_total": 5,
     "rooms_active": 3
@@ -74,8 +74,8 @@
       "schedule": "1h",
       "state": "active",
       "agent": "admin",
-      "last_run": "2026-11-27 22:18",
-      "next_run": "2026-11-27 23:18",
+      "last_run": "2026-11-27 23:18",
+      "next_run": "2026-11-28 00:18",
       "summary": "기록 없음"
     },
     {
@@ -341,7 +341,7 @@
   ],
   "upcoming_runs": [
     {
-      "time": "2026-11-27 23:18",
+      "time": "2026-11-28 00:18",
       "title": "🔄 승권 대장 본부 대시보드 동기화",
       "type": "자동 스케줄",
       "agent": "admin"
